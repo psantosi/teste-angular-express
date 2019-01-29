@@ -1,0 +1,1 @@
+angular.module('testeMercadoLivre', ['ui.router', 'ngDialog']);

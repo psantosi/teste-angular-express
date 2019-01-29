@@ -1,0 +1,16 @@
+<div class="card margin-top">
+    <div class="card-body">
+        <div class="produto row">
+            <div class="produto-imagem col-md-9">
+                <img ng-src="{{vm.item.pictures[0].url}}" alt="">
+            </div>
+            <div class="produto-descricao col-md-3">
+                <p class="quantidade-vendida">Nuevo - {{vm.item.sold_quantity}} vendidos</p>
+                <p class="produto-title">{{vm.item.title}}</p>
+                <p class="produto-preco">{{vm.item.price | currency}}</p>
+
+                <button class="btn btn-primary btn-block">Comprar</button>
+            </div>
+        </div>
+    </div>
+</div>

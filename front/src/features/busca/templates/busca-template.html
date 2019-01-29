@@ -1,0 +1,20 @@
+<header id="header-busca">
+    <div class="container">
+        <div class="row">
+            <h1 class="logo col-md-auto">Mercado Livre</h1>
+
+            <form id="form-busca" class="col">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Nunca dejes de buscar" ng-model="vm.search">
+                    <div class="input-group-prepend" ng-click="vm.pesquisar()">
+                        <div class="input-group-text"><img src="./../../../../assets/ic_Search@2x.png.png"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div ui-view="{{vm.view}}"></div>
+</div>

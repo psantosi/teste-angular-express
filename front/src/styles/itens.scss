@@ -1,0 +1,31 @@
+.itens {
+    
+    border-bottom: 1px solid #e6e6e6; 
+    &:hover {
+        background: #f9f9f9;
+        cursor: pointer;
+    }
+
+    .item-imagem {
+        padding: 10px
+    }
+
+    .item-descricao {
+        padding-top: 25px;
+    }
+
+    .item-descricao-preco {
+        font-size: 22px;    
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }   
+
+    .item-local {
+        text-align: center;
+        padding-top: 25px;
+    }
+
+}

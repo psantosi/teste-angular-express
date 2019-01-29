@@ -1,0 +1,20 @@
+<div class="card margin-top">
+    <div class="card-body">
+        <div ng-repeat="item in vm.itens" class="itens row" ng-click="vm.irParaDescricao(item.id)">
+            <div class="item-imagem col-12 col-sm-2">
+                <img ng-src="{{item.thumbnail}}" alt="" width="90">
+            </div>
+            <div class="item-descricao col-12 col-sm-7">
+                <p class="item-descricao-preco">{{item.price | currency}} <img ng-if="item.shipping.free_shipping" src="./../../../../assets/ic_shipping@2x.png.png"></p>
+                <p class="item-descricao-title">{{item.title}}</p>
+            </div>
+            <div class="item-local col-12 col-sm-3">
+                <p>{{item.address.city_name}}</p>
+            </div>
+        </div>
+
+        <div class="nunhem-resultado" ng-if="!vm.itens">
+            <p>Nunhum resultado encontrado ou você não tem autorização</p>
+        </div>
+    </div>
+</div>
