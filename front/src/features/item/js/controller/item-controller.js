@@ -18,7 +18,6 @@
         function buscaDescricao() {
             Service.obterDescricao(vm.id).then(function(response) {
                 vm.descricao = response.data;
-                console.log(vm.descricao);
             });
         }
 
