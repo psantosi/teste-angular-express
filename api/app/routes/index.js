@@ -7,4 +7,7 @@ module.exports  = function(app) {
 
     app.route('/api/items/:id')
         .get(api.listarPorId);
+
+    app.route('/api/items/:id/description')
+        .get(api.listarPorIdDescricao);
 };
