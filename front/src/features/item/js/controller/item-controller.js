@@ -15,11 +15,19 @@
             });
         }
 
+        function buscaDescricao() {
+            Service.obterDescricao(vm.id).then(function(response) {
+                vm.descricao = response.data;
+                console.log(vm.descricao);
+            });
+        }
+
         function obterUrlParams() {
             if (!$state.params.id) { return; } 
 
             vm.id = $state.params.id;
             buscaItem();
+            buscaDescricao();
         }
 
         //init

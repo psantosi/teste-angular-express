@@ -9,7 +9,8 @@
     function ItemService($http) {
         var urlBase = 'http://localhost:3000/api/',
         service = {
-            obterItem: obterItem
+            obterItem: obterItem,
+            obterDescricao: obterDescricao
         }
 
         return service;
@@ -18,6 +19,13 @@
             return $http({
                 method: 'GET',
                 url: urlBase + 'items/' + id
+            });
+        }
+
+        function obterDescricao(id) {
+            return $http({
+                method: 'GET',
+                url: urlBase + 'items/' + id + '/description'
             });
         }
     }
